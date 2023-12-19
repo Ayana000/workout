@@ -1,0 +1,17 @@
+.featured {
+    margin-top: 112px;
+
+    &__title {
+        color: var(--Text-2, rgba(239, 237, 232, 0.65));
+        font-family: Inter;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 22px;
+        letter-spacing: 1px;
+        margin-bottom: 33px;
+    }
+
+    &__brand {
+        margin-left: 7px;
+    }
+}

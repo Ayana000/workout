@@ -1,0 +1,28 @@
+@import './component/header';
+@import './component/hero';
+@import './component/featured';
+@import './component/advertising';
+@import './component/workout';
+@import './component/footer';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #171717;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+

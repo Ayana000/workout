@@ -1,0 +1,199 @@
+.hero {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 180px;
+
+    &__title {
+        color: var(--Text-1, #FAFAF9);
+        font-family: Roboto;
+        font-size: 172px;
+        font-weight: 800;
+        line-height: 170px;
+        letter-spacing: -2px;
+        text-transform: uppercase;
+    }
+
+    &__desc {
+        margin-top: 46px;
+        width: 580px;
+        color: var(--Text-2, rgba(239, 237, 232, 0.65));
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.5px;
+    }
+
+    &__btn {
+        cursor: pointer;
+        position: relative;
+        color: #FFF;
+        font-family: Poppins;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 22px;
+        letter-spacing: 1px;
+        border-radius: 10px;
+        background: #E6533C;
+        padding: 24px 25px;
+        border: none;
+        margin-top: 50px;
+        transition: all 0.2s linear;
+    }
+
+    &__btn:hover {
+        border: 2px solid #E6533C;
+        background: #171717;
+        transition: all 0.2s linear;
+        transform: scale(1.10);
+    }
+
+    &__wrapper img {
+        position: absolute;
+        top: 50px;
+        left: 720px;
+    }
+
+    &__span-one {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 30px;
+        top: -120px;
+        width: 180px;
+        height: 110px;
+        border-radius: 12px;
+        background: #EF8964;
+        color: var(--Text-1, #FAFAF9);
+        font-family: Inter;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 50px;
+        letter-spacing: -5px;
+        text-transform: uppercase;
+
+        ::before {
+            content: '';
+            position: absolute;
+            background: url(../../img/run.svg)no-repeat center/cover;
+            width: 16px;
+            height: 16px;
+            top: -50px;
+            left: -90px;
+            fill: #EFA082;
+            padding: 4px;
+            border-radius: 50%;
+        }
+    }
+
+    &__span-one span {
+        position: relative;
+        top: 10px;
+        left: 8px;
+        color: var(--Text-2, rgba(239, 237, 232, 0.65));
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24px;
+        letter-spacing: 0.5px;
+    }
+
+    &__span-two {
+        position: relative;
+        top: 190px;
+        left: -400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 206px;
+        height: 96px;
+        border-radius: 12px;
+        background: #303030;
+        color: var(--Text-1, #FAFAF9);
+        font-family: Inter;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 24px;
+        letter-spacing: 0.3px;
+
+        ::after {
+            position: absolute;
+            content: '';
+            background: url(../../img/Group\ 21.svg)no-repeat center/cover;
+            width: 40px;
+            height: 40px;
+            top: 30px;
+            right: 150px;
+        }
+    }
+
+    &__span-two span {
+        color: var(--Text-2, rgba(239, 237, 232, 0.65));
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.5px;
+        margin-left: 40px;
+        margin-top: 10px;
+    }
+
+    &__span-three {
+        position: relative;
+        top: 180px;
+        right: -68px;
+        display: flex;
+        padding: 17px 24px;
+        flex-direction: column;
+        width: 193px;
+        height: 98px;
+        border-radius: 12px;
+        background: #7A29DC;
+        color: var(--Text-1, #FAFAF9);
+        font-family: Inter;
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 40px;
+        letter-spacing: 1px;
+    }
+
+    &__span-three span {
+        color: var(--Text-2, rgba(239, 237, 232, 0.65));
+        font-family: Inter;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 1px;
+        margin-top: 10px;
+        width: 200px;
+    }
+
+    &__card {
+        cursor: pointer;
+        @keyframes animation{
+            0%, 20%, 60%, 100% {
+                transform: translateY(0);
+                transform: translateY(0);
+            }
+        
+            40% {
+                transform: translateY(-20px);
+                transform: translateY(-20px);
+            }
+        
+            80% {
+                transform: translateY(-10px);
+                transform: translateY(-10px);
+            }
+        }
+        
+        :hover {
+            animation: animation 1s;
+        }
+    }
+}

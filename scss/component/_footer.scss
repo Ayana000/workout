@@ -1,0 +1,178 @@
+.footer {
+    margin-top: 193px;
+
+
+    &__title {
+        position: relative;
+        color: var(--Text-1, #FAFAF9);
+        font-family: Inter;
+        font-size: 50px;
+        font-weight: 500;
+        line-height: 70px;
+        letter-spacing: 0.83px;
+        border-bottom: 0.5px;
+        stroke: #fff;
+    }
+
+    &__cards {
+        position: relative;
+        margin-top: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        transition: all 0.2s linear;
+    }
+
+    &__card {
+        position: relative;
+        margin-bottom: 44px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 538px;
+        height: 640px;
+        background: #232532;
+    }
+
+    &__card:hover {
+        transform: perspective(500px) scale(1) rotateX(0) rotateY(0);
+        transition: all 0.2s ease 0s;
+    }
+
+    &__card-span {
+        position: relative;
+        margin-bottom: 44px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 538px;
+        height: 640px;
+        background: #323443;
+    }
+
+
+    // &__card-span:hover {
+    //     -webkit-transform: rotateZ(20deg);
+    //     -ms-transform: rotateZ(20deg);
+    //     transform: rotateZ(20deg);
+    //     transition: all 0.2s linear 0s;
+    // }
+
+    &__title {
+        position: relative;
+        color: var(--Text-1, #FAFAF9);
+        font-family: Inter;
+        font-size: 50px;
+        font-weight: 500;
+        line-height: 70px;
+        letter-spacing: 0.83px;
+    }
+
+    &__title::before {
+        position: absolute;
+        content: '';
+        width: 1152px;
+        height: 33px;
+        flex-shrink: 0;
+        stroke-width: 0.5px;
+        stroke: #FFF;
+        opacity: 0.4;
+    }
+
+
+    &__heading {
+        color: var(--Text-1, #FAFAF9);
+        text-align: center;
+        font-family: Inter;
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 50px;
+        letter-spacing: 0.3px;
+        margin-bottom: 34px;
+    }
+
+    &__desc {
+        width: 402px;
+        color: var(--Text-2, rgba(239, 237, 232, 0.65));
+        font-family: Inter;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.5px;
+        margin-bottom: 14px;
+    }
+
+    &__list {
+        color: var(--Text-2, rgba(239, 237, 232, 0.65));
+        font-family: Inter;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.5px;
+        margin-right: 50px;
+
+    }
+
+    &__link {
+        position: relative;
+        top: 40px;
+        color: var(--Link, #0070C9);
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 26px;
+        letter-spacing: 0.5px;
+        transition: all 0.2s ease;
+    }
+
+    &__link:hover {
+        color: #2a96ef;
+        margin-left: 8px;
+        transition: all 0.3s ease;
+    }
+
+    &-btn {
+        cursor: pointer;
+        margin-top: 32px;
+        color: var(--Text-1, #FAFAF9);
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 22px;
+        border-radius: 10px;
+        background: var(--Link, #0070C9);
+        padding: 4px 14px;
+        border: none;
+        transition: all 0.2s linear;
+    }
+
+    &-btn:hover {
+        scale: 1.10;
+    }
+
+    &__more-btn {
+        cursor: pointer;
+        color: #303030;
+        font-family: Poppins;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 22px;
+        float: right;
+        border: none;
+        width: 150px;
+        height: 38px;
+        background: #FAFAF9;
+        box-shadow: 0px 4px 9px 0px rgba(255, 255, 255, 0.25);
+        margin-bottom: 27px;
+        transition: all 0.2s linear;
+    }
+
+    &__more-btn:hover {
+        background: #000;
+        color: #fff;
+        transition: all 0.2s linear;
+    }
+}
+
